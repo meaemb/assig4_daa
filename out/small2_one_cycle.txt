@@ -1,0 +1,24 @@
+DATASET: small2_one_cycle.json
+n=8, directed=true, source=0, weight_model=edge
+
+SCC components: 6
+  C0 size=1 vertices=[7]
+  C1 size=1 vertices=[6]
+  C2 size=1 vertices=[5]
+  C3 size=1 vertices=[4]
+  C4 size=1 vertices=[3]
+  C5 size=3 vertices=[2, 1, 0]
+SCC time(ns)=57600 visits=8 edges=8
+
+Condensation DAG: V=6
+Topo order: [5, 4, 3, 2, 1, 0]
+Topo time(ns)=16900 pushes=6 pops=6
+
+DAG-SP (shortest) from comp(source)=5
+Distances: [5, 4, 3, 2, 1, 0]
+One shortest path to comp 0: [5, 4, 3, 2, 1, 0] , length=5
+SP relaxations=5 time(ns)=8900
+
+Critical path (longest) from comp(source)
+Longest path to comp 0: [5, 4, 3, 2, 1, 0] , length=5
+LP relaxations=5 time(ns)=8600

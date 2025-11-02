@@ -1,0 +1,38 @@
+DATASET: large1_sparse_mixed.json
+n=24, directed=true, source=0, weight_model=edge
+
+SCC components: 20
+  C0 size=1 vertices=[23]
+  C1 size=1 vertices=[22]
+  C2 size=1 vertices=[21]
+  C3 size=1 vertices=[20]
+  C4 size=1 vertices=[19]
+  C5 size=1 vertices=[18]
+  C6 size=1 vertices=[17]
+  C7 size=1 vertices=[16]
+  C8 size=1 vertices=[15]
+  C9 size=1 vertices=[14]
+  C10 size=1 vertices=[13]
+  C11 size=1 vertices=[12]
+  C12 size=1 vertices=[11]
+  C13 size=1 vertices=[10]
+  C14 size=1 vertices=[9]
+  C15 size=1 vertices=[8]
+  C16 size=1 vertices=[7]
+  C17 size=1 vertices=[6]
+  C18 size=3 vertices=[2, 1, 0]
+  C19 size=3 vertices=[5, 4, 3]
+SCC time(ns)=347500 visits=24 edges=24
+
+Condensation DAG: V=20
+Topo order: [18, 19, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Topo time(ns)=119900 pushes=20 pops=20
+
+DAG-SP (shortest) from comp(source)=18
+Distances: [18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 2305843009213693951]
+One shortest path to comp 0: [18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] , length=18
+SP relaxations=18 time(ns)=85600
+
+Critical path (longest) from comp(source)
+Longest path to comp 0: [18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] , length=18
+LP relaxations=18 time(ns)=106300

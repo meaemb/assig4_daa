@@ -1,0 +1,58 @@
+DATASET: large3_dag_perf.json
+n=40, directed=true, source=0, weight_model=edge
+
+SCC components: 40
+  C0 size=1 vertices=[35]
+  C1 size=1 vertices=[30]
+  C2 size=1 vertices=[25]
+  C3 size=1 vertices=[20]
+  C4 size=1 vertices=[15]
+  C5 size=1 vertices=[10]
+  C6 size=1 vertices=[5]
+  C7 size=1 vertices=[36]
+  C8 size=1 vertices=[31]
+  C9 size=1 vertices=[26]
+  C10 size=1 vertices=[21]
+  C11 size=1 vertices=[16]
+  C12 size=1 vertices=[11]
+  C13 size=1 vertices=[6]
+  C14 size=1 vertices=[0]
+  C15 size=1 vertices=[37]
+  C16 size=1 vertices=[32]
+  C17 size=1 vertices=[27]
+  C18 size=1 vertices=[22]
+  C19 size=1 vertices=[17]
+  C20 size=1 vertices=[12]
+  C21 size=1 vertices=[7]
+  C22 size=1 vertices=[1]
+  C23 size=1 vertices=[38]
+  C24 size=1 vertices=[33]
+  C25 size=1 vertices=[28]
+  C26 size=1 vertices=[23]
+  C27 size=1 vertices=[18]
+  C28 size=1 vertices=[13]
+  C29 size=1 vertices=[8]
+  C30 size=1 vertices=[2]
+  C31 size=1 vertices=[39]
+  C32 size=1 vertices=[34]
+  C33 size=1 vertices=[29]
+  C34 size=1 vertices=[24]
+  C35 size=1 vertices=[19]
+  C36 size=1 vertices=[14]
+  C37 size=1 vertices=[9]
+  C38 size=1 vertices=[3]
+  C39 size=1 vertices=[4]
+SCC time(ns)=122700 visits=40 edges=39
+
+Condensation DAG: V=40
+Topo order: [14, 22, 30, 38, 39, 6, 13, 21, 29, 37, 5, 12, 20, 28, 36, 4, 11, 19, 27, 35, 3, 10, 18, 26, 34, 2, 9, 17, 25, 33, 1, 8, 16, 24, 32, 0, 7, 15, 23, 31]
+Topo time(ns)=273200 pushes=40 pops=40
+
+DAG-SP (shortest) from comp(source)=14
+Distances: [7, 6, 5, 4, 3, 2, 1, 7, 6, 5, 4, 3, 2, 1, 0, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951, 2305843009213693951]
+One shortest path to comp 0: [14, 6, 5, 4, 3, 2, 1, 0] , length=7
+SP relaxations=14 time(ns)=33900
+
+Critical path (longest) from comp(source)
+Longest path to comp 0: [14, 6, 5, 4, 3, 2, 1, 0] , length=7
+LP relaxations=14 time(ns)=28100
