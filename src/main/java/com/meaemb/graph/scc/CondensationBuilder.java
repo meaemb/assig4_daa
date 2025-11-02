@@ -16,7 +16,6 @@ public class CondensationBuilder {
                 if (cu != cv) {
                     long key = (((long) cu) << 32) ^ cv;
                     if (seen.add(key)) {
-                        // Для DAG веса не важны (структурный граф компонент)
                         dag.addEdge(cu, cv, 0);
                     }
                 }

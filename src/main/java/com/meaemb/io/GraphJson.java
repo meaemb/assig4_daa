@@ -6,8 +6,8 @@ public class GraphJson {
     public boolean directed;
     public int n;
     public List<EdgeJson> edges;
-    public Integer source;      // может отсутствовать
-    public String weight_model; // "edge" или "node" (мы используем "edge")
+    public Integer source;
+    public String weight_model;
 
     public static class EdgeJson {
         public int u;

@@ -7,7 +7,7 @@ import com.meaemb.model.Graph;
 import java.util.*;
 
 public class DagShortestPaths {
-    private final Graph dagWeighted; // исходный DAG (после SCC-компрессии веса на рёбрах можно пронести из исходного графа при необходимости)
+    private final Graph dagWeighted;
     private final Metrics m;
 
     public DagShortestPaths(Graph dagWeighted, Metrics metrics) {
